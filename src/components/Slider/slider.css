@@ -16,8 +16,16 @@
     margin-top: 5rem;
     flex: 0 0 100%;
     min-height: 700px;
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
+  }
+
+  .slide img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: center;
   }
   
   .slide-content {

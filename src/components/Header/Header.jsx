@@ -23,6 +23,7 @@ const Header = () => {
       <div className="container">
         <div className="logo">
           <img src={logo} alt="Logo" />
+          Cook Book
         </div>
         <nav className="menu">
           <ul>
@@ -36,10 +37,11 @@ const Header = () => {
           {isSearchActive ? (
             <input type="text" placeholder="Wyszukaj" onBlur={handleBlur} />
           ) : (
+          <span></span>
+          )}
             <div className="search-icon" onClick={toggleSearch}>
               <img src={search} alt="search" />
             </div>
-          )}
           <div className="user-profile">
             <img src={user} alt="Profil użytkownika" />
           </div>

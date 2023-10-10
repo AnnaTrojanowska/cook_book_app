@@ -8,8 +8,24 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 
 const Slider = () => {
   const sliderImages = [    
-   image1,
-  image2, image3  ];
+    {
+      image: image1,
+      text: '1231231',
+      description: 'desc'
+    },
+    {
+      image: image2,
+      text: '1231231',
+      description: 'desc'
+
+    },
+    {
+      image: image3,
+      text: '1231231',
+      description: 'desc'
+
+    },
+  ];
 
   
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -33,11 +49,12 @@ const Slider = () => {
   return (
     <div className="slider-container">
       <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-        {sliderImages.map((image, index) => (
-          <div key={index} className="slide" style={{ backgroundImage: `url(${image})` }} >
+        {sliderImages.map((imageObj, index) => (
+          <div key={index} className="slide">
+            <img src={imageObj.image} alt="" />
             <div className="slide-content">
-              <h2>{sliderImages.title}</h2>
-              <p>{sliderImages.description}</p>
+              <h2>{imageObj.text}</h2>
+              <p>{imageObj.description}</p>
             </div>
             <FaArrowAltCircleLeft className="arrow-icon left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="arrow-icon right-arrow" onClick={nextSlide} />
