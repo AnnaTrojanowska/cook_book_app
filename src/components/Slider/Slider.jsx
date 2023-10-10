@@ -10,19 +10,20 @@ const Slider = () => {
   const sliderImages = [    
     {
       image: image1,
-      text: '1231231',
-      description: 'desc'
+      text: 'Lorem ipsum',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officiis, ullam, ducimus nobis explicabo iusto recusandae iure pariatur error vitae atque corporis eos aperiam harum earum dolorem voluptatem, nihil veniam.'
+      
     },
     {
       image: image2,
-      text: '1231231',
-      description: 'desc'
+      text: 'Lorem ipsum2',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officiis, ullam, ducimus nobis explicabo iusto recusandae iure pariatur error vitae atque corporis eos aperiam harum earum dolorem voluptatem, nihil veniam.'
 
     },
     {
       image: image3,
-      text: '1231231',
-      description: 'desc'
+      text: 'Lorem ipsum3',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officiis, ullam, ducimus nobis explicabo iusto recusandae iure pariatur error vitae atque corporis eos aperiam harum earum dolorem voluptatem, nihil veniam.'
 
     },
   ];
@@ -55,6 +56,7 @@ const Slider = () => {
             <div className="slide-content">
               <h2>{imageObj.text}</h2>
               <p>{imageObj.description}</p>
+              <button>Zobacz</button>
             </div>
             <FaArrowAltCircleLeft className="arrow-icon left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="arrow-icon right-arrow" onClick={nextSlide} />
