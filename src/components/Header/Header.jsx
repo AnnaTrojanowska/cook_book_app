@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./header.css"
-import logo from '../../assets/images/cake-3-line.png'
+import logo from '../../assets/images/logo-black.png'
 import user from '../../assets/images/user-line.png'
 import search from '../../assets/images/search-line.png'
 
@@ -23,12 +23,12 @@ const Header = () => {
       <div className="container">
         <div className="logo">
           <img src={logo} alt="Logo" />
-          Cook Book
+          
         </div>
         <nav className="menu">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="#">Przepisy</a></li>
+            <li><a href="#">Posiłki</a></li>
             <li><a href="#">Inspiracje</a></li>
             <li><a href="#">Vege</a></li>
           </ul>
