@@ -50,20 +50,25 @@
     
   }
   
-  .slide-content button{
-    border: none;
-    background-color: #40ba37;
-    border-left: 3px solid #1c8314;
-    min-width: 160px;
+  .delicious-btn {
+    display: inline-block;
+    min-width: 50px;
     height: 60px;
-    color: #fff;
-    font-weight: 600;
+    color: #ffffff;
+    border: none;
+    border-left: 3px solid #1c8314;
+    border-radius: 0;
+    padding: 0 30px;
     font-size: 16px;
-    margin-top: 30px;
-    cursor: pointer;
-  }
+    line-height: 58px;
+    font-weight: 600;
+   text-decoration: none;
+    transition-duration: 500ms;
+    text-transform: capitalize;
+    background-color: #40ba37;
+}
 
-  .slide-content button:hover{
+  .slide-content a:hover{
     background-color: #1c8314;
   }
 .arrow-icon {

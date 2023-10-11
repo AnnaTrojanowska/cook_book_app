@@ -56,7 +56,7 @@ const Slider = () => {
             <div className="slide-content">
               <h2>{imageObj.text}</h2>
               <p>{imageObj.description}</p>
-              <button>Zobacz</button>
+              <a href="#" class="btn delicious-btn">Zobacz</a>
             </div>
             <FaArrowAltCircleLeft className="arrow-icon left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="arrow-icon right-arrow" onClick={nextSlide} />
