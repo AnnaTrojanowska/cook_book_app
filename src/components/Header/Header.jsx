@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import "./header.css"
 import logo from '../../assets/images/logo-black.png'
-import user from '../../assets/images/user-line.png'
-import search from '../../assets/images/search-line.png'
+import user from '../../assets/images/icons/user-line.png'
+import search from '../../assets/images/icons/search-line.png'
 
 
 const Header = () => {

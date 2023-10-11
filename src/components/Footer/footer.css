@@ -9,6 +9,12 @@
     align-items: center;
     padding: 20px;
   }
+
+.social_media{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
   .logo{
     font-size: 35px;
     display: flex;
@@ -17,5 +23,5 @@
   }
   .logo img {
     height: auto;
-    max-width: 200px;
+    max-width: 160px!important;
   }
