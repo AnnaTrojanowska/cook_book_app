@@ -14,20 +14,24 @@
 }
 
 .row{
-    display: flex;
-    flex-wrap: no-wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
     margin-left: -15px;
     margin-right: -15px;
 }
 
+@media all  and (max-width:1185px) {
+.row{
+
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+
 .category{
-    flex: 0 0 50%;
-    max-width: 50%;
     position: relative;
     width: 100%;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
 }
 
 .single_category{

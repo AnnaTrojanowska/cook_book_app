@@ -12,7 +12,7 @@ const Footer = () => {
     <div className='footer'>
         <div className='footer_container'>
             <div className='social_media'>
-                <a href='https://facebook.com'><img src={fb} alt='fb'/></a>
+                <a href='https://facebook.com' target='_blank'><img src={fb} alt='fb'/></a>
                 <a href='https://pinterest.com'><img src={pinterest} alt='pinterest'/></a>
                 <a href='https://instagram.com'><img src={ig} alt='ig'/></a>
                 <a href='https://twitter.com'><img src={tw} alt='tw'/></a>

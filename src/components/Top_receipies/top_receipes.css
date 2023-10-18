@@ -1,0 +1,81 @@
+.top_receipe{
+    position: relative;
+    z-index: 1;
+    padding-bottom: 50px;
+}
+
+.container_receipe{
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.row_receipe{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.heading{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.top_receipe_heading{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.top_receipe_heading h3{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.column{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.single_receipe{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px !important;
+}
+
+.single_receipe img{
+    border-bottom: 3px solid #40ba37;
+    height: auto;
+    max-width: 100%;
+}
+
+.receipe_content{
+    text-align: center;
+}
+
+.receipe_content h5{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    transition-duration: 500ms;
+}
+
+a{
+    transition-duration: 500ms;
+    text-decoration: none;
+    outline: 0 solid transparent;
+    font-weight: 600;
+    font-size: 14px;
+    color: #474747;
+}
