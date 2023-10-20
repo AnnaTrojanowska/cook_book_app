@@ -31,7 +31,7 @@ const Top_category = () => {
         </div>
       </div>
     </div>
-
+ 
   )
 }
 

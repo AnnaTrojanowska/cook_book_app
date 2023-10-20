@@ -27,10 +27,10 @@ const Header = () => {
         </div>
         <nav className="menu">
           <ul>
-            <li><a href="#">Przepisy</a></li>
-            <li><a href="#">Posiłki</a></li>
-            <li><a href="#">Inspiracje</a></li>
-            <li><a href="#">Vege</a></li>
+            <li><a href="#">PRZEPISY</a></li>
+            <li><a href="#">OSTATNIO DODANE</a></li>
+            <li><a href="#">ULUBIONE</a></li>{/*dla zalogowanych*/}
+            <li><a href="#">DODAJ</a></li>{/*dla zalogowanych*/}
           </ul>
         </nav>
         <div className="user-section">
