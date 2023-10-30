@@ -3,6 +3,8 @@ import "./header.css"
 import logo from '../../assets/images/logo-black.png'
 import user from '../../assets/images/icons/user-line.png'
 import search from '../../assets/images/icons/search-line.png'
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+import Routes from '../../router/Routers';
 
 
 const Header = () => {
@@ -19,15 +21,16 @@ const Header = () => {
     };
 
   return (
+    <Router>
     <div className="header">
       <div className="container">
         <div className="logo">
-          <img src={logo} alt="Logo" />
+        <Link to='/home'><img src={logo} alt="Logo" /></Link>
           
         </div>
         <nav className="menu">
           <ul>
-            <li><a href="#">PRZEPISY</a></li>
+            <li><Link to='/receipes'>PRZEPISY</Link></li>
             <li><a href="#">OSTATNIO DODANE</a></li>
             <li><a href="#">ULUBIONE</a></li>{/*dla zalogowanych*/}
             <li><a href="#">DODAJ</a></li>{/*dla zalogowanych*/}
@@ -35,7 +38,7 @@ const Header = () => {
         </nav>
         <div className="user-section">
           {isSearchActive ? (
-            <input type="text" placeholder="Wyszukaj" onBlur={handleBlur} />
+            <input className='search_bar' type="text" placeholder="Wyszukaj" onBlur={handleBlur} />
           ) : (
           <span></span>
           )}
@@ -48,7 +51,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-
+    </Router>
   )
 }
 
