@@ -4,6 +4,7 @@ import image1 from '../../assets/images/bg6.jpg';
 import image2 from '../../assets/images/bg6.jpg';
 import image3 from '../../assets/images/bg6.jpg';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import '../../index.css'
 
 
 const Slider = () => {
@@ -56,7 +57,7 @@ const Slider = () => {
             <div className="slide-content">
               <h2>{imageObj.text}</h2>
               <p>{imageObj.description}</p>
-              <a href="#" class="btn delicious-btn">Zobacz</a>
+              <a href="#" class="button">Zobacz</a>
             </div>
             <FaArrowAltCircleLeft className="arrow-icon left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="arrow-icon right-arrow" onClick={nextSlide} />

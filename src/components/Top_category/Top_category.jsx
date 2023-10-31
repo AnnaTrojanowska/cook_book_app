@@ -2,6 +2,7 @@ import React from 'react'
 import "./top_category.css"
 import breakfast from '../../assets/images/breakfast.jpg'
 import dinner from '../../assets/images/dinner.jpg'
+import '../../index.css'
 
 const Top_category = () => {
   return (
@@ -14,7 +15,7 @@ const Top_category = () => {
               <div className='top_cta_content'>
                 <h3>Śniadania</h3>
                 <h6>Proste i pyszne</h6>
-                 <a href="#" class="btn delicious-btn">Zobacz</a>
+                 <a href="#" class="button">Zobacz</a>
               </div>
             </div>
           </div>
@@ -24,7 +25,7 @@ const Top_category = () => {
               <div className='top_cta_content'>
                 <h3>Obiady</h3>
                 <h6>Proste i pyszne</h6>
-                <a href="#" class="btn delicious-btn">Zobacz</a>
+                <a href="#" class="button">Zobacz</a>
               </div>
             </div>
           </div>

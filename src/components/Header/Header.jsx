@@ -31,7 +31,7 @@ const Header = () => {
         <nav className="menu">
           <ul>
             <li><Link to='/receipes'>PRZEPISY</Link></li>
-            <li><a href="#">OSTATNIO DODANE</a></li>
+            <li><a href="#">LOSOWY PRZEPIS</a></li>
             <li><a href="#">ULUBIONE</a></li>{/*dla zalogowanych*/}
             <li><a href="#">DODAJ</a></li>{/*dla zalogowanych*/}
           </ul>

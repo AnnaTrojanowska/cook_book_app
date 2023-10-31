@@ -1,30 +1,12 @@
 import React from 'react'
-import {Container, Row, Col, Button} from 'reactstrap'
+import Card_receipes from '../components/Card_receipes/Card_receipes'
 
 const Receipes = () => {
   return (
-    <Container>
-        <Row xs="4">
-            <Col className="bg-light border">
-            Column
-            </Col>
-            <Col className="bg-light border">
-            Column
-            </Col>
-            <Col className="bg-light border">
-            Column
-            </Col>
-            <Col className="bg-light border">
-            Column
-            </Col>
-            <Col className="bg-light border">
-            Column
-            </Col>
-            <Col className="bg-light border">
-            Column
-            </Col>
-        </Row>
-    </Container>
+    <>
+        <Card_receipes/>
+    </>
+
   )
 }
 

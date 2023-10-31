@@ -1,5 +1,6 @@
 import React from 'react'
 import "./vegan_section.css"
+import '../../index.css'
 
 const Vegan_section = () => {
   return (
@@ -10,7 +11,7 @@ const Vegan_section = () => {
                     <div className='content_vegan'>
                         <h2>Przepisy Vege</h2>
                         <p>Fusce nec ante vitae lacus aliquet vulputate. Donec scelerisque accumsan molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sed accumsan neque. Ut vulputate, lectus vel aliquam congue, risus leo elementum nibh</p>
-                        <a href='#' className='btn delicious-btn'>Zobacz więcej przepisów</a>
+                        <a href='#' className='button'>Zobacz więcej przepisów</a>
                     </div>
                 </div>
             </div>

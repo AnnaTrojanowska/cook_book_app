@@ -14,7 +14,7 @@
 }
 
 .row{
-    display: grid;
+    display: grid!important;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-left: -15px;

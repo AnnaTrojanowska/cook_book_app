@@ -69,13 +69,19 @@
     margin-bottom: 10px;
     font-weight: 400;
     transition-duration: 500ms;
+    margin-top: 20px;
 }
 
-a{
+.receipe_content a{
     transition-duration: 500ms;
-    text-decoration: none;
+    text-decoration: none!important;
     outline: 0 solid transparent;
     font-weight: 600;
     font-size: 14px;
-    color: #474747;
+    color: #474747!important;
+
+}
+
+.receipe_content a h5:hover{
+    color: #1c8314;
 }
