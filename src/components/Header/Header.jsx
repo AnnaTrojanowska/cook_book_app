@@ -5,6 +5,7 @@ import user from '../../assets/images/icons/user-line.png'
 import search from '../../assets/images/icons/search-line.png'
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Routes from '../../router/Routers';
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 
 const Header = () => {
@@ -20,6 +21,12 @@ const Header = () => {
       }
     };
 
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+      setDropdownOpen(prevState => !prevState);
+    };
+
   return (
     <Router>
     <div className="header">
@@ -29,7 +36,31 @@ const Header = () => {
           
         </div>
         <nav className="menu">
+          
           <ul>
+          <li className="nav-item">
+            <Dropdown isOpen={dropdownOpen} toggle={toggleDropdown}>
+              <DropdownToggle caret>
+                PRZEPISY
+              </DropdownToggle>
+              <DropdownMenu>
+                
+                <DropdownItem>KUCHNIA AZJATYCKA</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>KUCHNIA WŁOSKA</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>KUCHNIA JAPOŃSKA</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>KUCHNIA KOREAŃSKA</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>KUCHNIA WSCHODNIO-EUROPEJKSKA</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>KUCHNIA EUROPEJSKA</DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
+          </li>
+
+            
             <li><Link to='/receipes'>PRZEPISY</Link></li>
             <li><a href="#">LOSOWY PRZEPIS</a></li>
             <li><a href="#">ULUBIONE</a></li>{/*dla zalogowanych*/}
