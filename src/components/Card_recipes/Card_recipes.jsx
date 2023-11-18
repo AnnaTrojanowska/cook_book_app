@@ -1,7 +1,7 @@
 import React from 'react'
 import {CardGroup, Card, CardImg, CardBody, CardText, CardTitle, CardSubtitle, Button} from 'reactstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./card_receipes.css"
+import "./card_recipes.css"
 import asian from '../../assets/images/cuisine/asian.jpg'
 import eastern_european from '../../assets/images/cuisine/eastern_european.jpg'
 import european from '../../assets/images/cuisine/european.jpg'
@@ -9,11 +9,11 @@ import italian from '../../assets/images/cuisine/italian.jpg'
 import japanese from '../../assets/images/cuisine/japanese.jpg'
 import korean from '../../assets/images/cuisine/korean.jpg'
 
-const Card_receipes = () => {
+const Card_recipes = () => {
   return (
     <>
-    <CardGroup className='receipe_group'>
-  <Card className='receipes_card'>
+    <CardGroup className='recipe_group'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src={asian}
@@ -31,7 +31,7 @@ const Card_receipes = () => {
       <a href="#" class="button card_button">Zobacz</a>
     </CardBody>
   </Card>
-  <Card className='receipes_card'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src={italian}
@@ -49,7 +49,7 @@ const Card_receipes = () => {
       <a href="#" class="button card_button">Zobacz</a>
     </CardBody>
   </Card>
-  <Card className='receipes_card'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src={japanese}
@@ -68,8 +68,8 @@ const Card_receipes = () => {
     </CardBody>
   </Card>
   </CardGroup>
-  <CardGroup className='receipe_group'>
-  <Card className='receipes_card'>
+  <CardGroup className='recipe_group'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src={korean}
@@ -87,7 +87,7 @@ const Card_receipes = () => {
       <a href="#" class="button card_button">Zobacz</a>
     </CardBody>
   </Card>
-  <Card className='receipes_card'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src={eastern_european}
@@ -105,7 +105,7 @@ const Card_receipes = () => {
       <a href="#" class="button card_button">Zobacz</a>
     </CardBody>
   </Card>
-  <Card className='receipes_card'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src={european}
@@ -129,4 +129,4 @@ const Card_receipes = () => {
   )
 }
 
-export default Card_receipes
+export default Card_recipes

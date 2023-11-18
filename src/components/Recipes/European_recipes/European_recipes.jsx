@@ -1,12 +1,12 @@
 import React from 'react'
 import {CardGroup, Card, CardImg, CardBody, CardText, CardTitle, CardSubtitle, Button} from 'reactstrap'
-import './italian_receipes.css'
-import '../Card_receipes/card_receipes.css'
+import './european_recipes.css'
+import '../../Card_recipes/card_recipes.css'
 
-const Italian_receipes = () => {
+const European_recipes = () => {
   return (<>
-    <CardGroup className='receipe_group'>
-  <Card className='receipes_card'>
+    <CardGroup className='recipe_group'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src="https://picsum.photos/318/180"
@@ -31,7 +31,7 @@ const Italian_receipes = () => {
       </Button>
     </CardBody>
   </Card>
-  <Card className='receipes_card'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src="https://picsum.photos/318/180"
@@ -56,7 +56,7 @@ const Italian_receipes = () => {
       </Button>
     </CardBody>
   </Card>
-  <Card className='receipes_card'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src="https://picsum.photos/318/180"
@@ -82,8 +82,8 @@ const Italian_receipes = () => {
     </CardBody>
   </Card>
 </CardGroup>
-<CardGroup  className='receipe_group'>
-  <Card className='receipes_card'>
+<CardGroup  className='recipe_group'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src="https://picsum.photos/318/180"
@@ -108,7 +108,7 @@ const Italian_receipes = () => {
       </Button>
     </CardBody>
   </Card>
-  <Card className='receipes_card'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src="https://picsum.photos/318/180"
@@ -133,7 +133,7 @@ const Italian_receipes = () => {
       </Button>
     </CardBody>
   </Card>
-  <Card className='receipes_card'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src="https://picsum.photos/318/180"
@@ -159,8 +159,8 @@ const Italian_receipes = () => {
     </CardBody>
   </Card>
 </CardGroup>
-<CardGroup className='receipe_group'>
-  <Card className='receipes_card'>
+<CardGroup className='recipe_group'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src="https://picsum.photos/318/180"
@@ -185,7 +185,7 @@ const Italian_receipes = () => {
       </Button>
     </CardBody>
   </Card>
-  <Card className='receipes_card'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src="https://picsum.photos/318/180"
@@ -210,7 +210,7 @@ const Italian_receipes = () => {
       </Button>
     </CardBody>
   </Card>
-  <Card className='receipes_card'>
+  <Card className='recipes_card'>
     <CardImg
       alt="Card image cap"
       src="https://picsum.photos/318/180"
@@ -241,4 +241,4 @@ const Italian_receipes = () => {
   )
 }
 
-export default Italian_receipes
+export default European_recipes

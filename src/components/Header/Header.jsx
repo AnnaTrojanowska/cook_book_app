@@ -5,7 +5,7 @@ import user from '../../assets/images/icons/user-line.png'
 import search from '../../assets/images/icons/search-line.png'
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Routes from '../../router/Routers';
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown, Button } from 'reactstrap';
 
 
 const Header = () => {
@@ -39,29 +39,39 @@ const Header = () => {
           
           <ul>
           <li className="nav-item">
-            <Dropdown isOpen={dropdownOpen} toggle={toggleDropdown}>
-              <DropdownToggle caret>
-                PRZEPISY
-              </DropdownToggle>
-              <DropdownMenu>
-                
-                <DropdownItem>KUCHNIA AZJATYCKA</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>KUCHNIA WŁOSKA</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>KUCHNIA JAPOŃSKA</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>KUCHNIA KOREAŃSKA</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>KUCHNIA WSCHODNIO-EUROPEJKSKA</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>KUCHNIA EUROPEJSKA</DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
+            <UncontrolledDropdown group>
+                <Button color='none'>
+                <Link to='/recipes'>PRZEPISY</Link>
+                </Button>
+                <DropdownToggle
+                  caret
+                  color="none"
+                />
+                <DropdownMenu>
+                  
+                  <DropdownItem>
+                  <Link to='/asian'>AZJATYCKIE</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                   <Link to='/italian'> WŁOSKIE </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                  <Link to='/japanese'>JAPOŃSKIE</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                  <Link to='/korean'>KOREAŃSKIE</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                  <Link to='/easterneuropean'> WSCHODNIO-EUROPEJSKIE</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                  <Link to='/european'>EUROPEJSKIE</Link>
+                  </DropdownItem>
+                  
+                </DropdownMenu>
+            </UncontrolledDropdown>
           </li>
 
-            
-            <li><Link to='/receipes'>PRZEPISY</Link></li>
             <li><a href="#">LOSOWY PRZEPIS</a></li>
             <li><a href="#">ULUBIONE</a></li>{/*dla zalogowanych*/}
             <li><a href="#">DODAJ</a></li>{/*dla zalogowanych*/}

@@ -1,8 +1,8 @@
-.receipe_group{
+.recipe_group{
     padding: 0 50px 0px 50px;
 }
 
-.receipes_card{
+.recipes_card{
     margin:80px;
     border: var(--bs-card-border-width) solid var(--bs-card-border-color)!important;
     border-radius: 0.375rem!important;

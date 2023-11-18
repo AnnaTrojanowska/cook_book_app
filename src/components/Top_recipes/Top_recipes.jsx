@@ -1,24 +1,24 @@
 import React from 'react'
-import "./top_receipes.css"
-import top_receipe from '../../assets/images/top_receipe.jpg'
+import "./top_recipes.css"
+import top_recipe from '../../assets/images/top_recipe.jpg'
 
-const Top_receipes = () => {
+const Top_recipes = () => {
   return (
-    <div className='top_receipe'>
-        <div className='container_receipe'>
+    <div className='top_recipe'>
+        <div className='container_recipe'>
             <div>
                 <div className='heading'>
-                    <div className='top_receipe_heading'>
+                    <div className='top_recipe_heading'>
                         <h3>Najlepsze przepisy</h3>
                     </div>
                 </div>
             </div>
 
-            <div className='row_receipe'>
+            <div className='row_recipe'>
                 <div className='column'>
-                    <div className='single_receipe'>
-                        <img src={top_receipe}/>
-                        <div className='receipe_content'>
+                    <div className='single_recipe'>
+                        <img src={top_recipe}/>
+                        <div className='recipe_content'>
                             <a href='#'>
                                 <h5>Nazwa przepisu</h5>
                             </a>
@@ -26,45 +26,45 @@ const Top_receipes = () => {
                     </div>
                 </div>
                 <div className='column'>
-                    <div className='single_receipe'>
-                        <img src={top_receipe}/>
-                        <div className='receipe_content'>
+                    <div className='single_recipe'>
+                        <img src={top_recipe}/>
+                        <div className='recipe_content'>
                             <a href='#'>
                                 <h5>Nazwa przepisu</h5>
                             </a>
                         </div>
                     </div>
                 </div><div className='column'>
-                    <div className='single_receipe'>
-                        <img src={top_receipe}/>
-                        <div className='receipe_content'>
+                    <div className='single_recipe'>
+                        <img src={top_recipe}/>
+                        <div className='recipe_content'>
                             <a href='#'>
                                 <h5>Nazwa przepisu</h5>
                             </a>
                         </div>
                     </div>
                 </div><div className='column'>
-                    <div className='single_receipe'>
-                        <img src={top_receipe}/>
-                        <div className='receipe_content'>
+                    <div className='single_recipe'>
+                        <img src={top_recipe}/>
+                        <div className='recipe_content'>
                             <a href='#'>
                                 <h5>Nazwa przepisu</h5>
                             </a>
                         </div>
                     </div>
                 </div><div className='column'>
-                    <div className='single_receipe'>
-                        <img src={top_receipe}/>
-                        <div className='receipe_content'>
+                    <div className='single_recipe'>
+                        <img src={top_recipe}/>
+                        <div className='recipe_content'>
                             <a href='#'>
                                 <h5>Nazwa przepisu</h5>
                             </a>
                         </div>
                     </div>
                 </div><div className='column'>
-                    <div className='single_receipe'>
-                        <img src={top_receipe}/>
-                        <div className='receipe_content'>
+                    <div className='single_recipe'>
+                        <img src={top_recipe}/>
+                        <div className='recipe_content'>
                             <a href='#'>
                                 <h5>Nazwa przepisu</h5>
                             </a>
@@ -78,4 +78,4 @@ const Top_receipes = () => {
   )
 }
 
-export default Top_receipes
+export default Top_recipes
