@@ -62,7 +62,7 @@ const Header = () => {
                   <Link to='/korean'>KOREAŃSKIE</Link>
                   </DropdownItem>
                   <DropdownItem>
-                  <Link to='/easterneuropean'> WSCHODNIO-EUROPEJSKIE</Link>
+                  <Link to='/spanish'> HISZPAŃSKA</Link>
                   </DropdownItem>
                   <DropdownItem>
                   <Link to='/european'>EUROPEJSKIE</Link>

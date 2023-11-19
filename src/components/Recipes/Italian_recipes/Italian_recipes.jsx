@@ -45,8 +45,6 @@ const Italian_recipes = () => {
     </div>
     <div className='card_div'></div>
   
-
-<div className='card_div'></div>
 </>
   )
 }

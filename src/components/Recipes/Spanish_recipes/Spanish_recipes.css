@@ -21,7 +21,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: auto; /* Maksymalna wysokość karty */
+    height: 500px; /* Maksymalna wysokość karty */
     overflow: hidden; /* Ukryj zawartość, która wychodzi poza karty */
   }
   
@@ -33,7 +33,7 @@
   }
 
   .card_title{
-    width: 330px;
+    width: 300px;
   }
   
   .heading_recipe{

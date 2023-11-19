@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect }  from 'react'
 import {CardGroup, Card, CardImg, CardBody, CardText, CardTitle, CardSubtitle, Button} from 'reactstrap'
-import './asian_recipes.css'
+import './Spanish_recipes.css'
 import '../../Card_recipes/card_recipes.css'
 
-
-const Asian_recipes = () => {  
-
+const Spanish_recipes = () => {
   const [recipes, setRecipes] = useState(null);
   const apiKey = '8d02f508a08743e5a1daa7e0c08d51b9';
 
   useEffect(() => {
     // Wykonaj zapytanie do API Spoonacular po załadowaniu komponentu
-    fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&number=9&cuisine=Asian`)
+    fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&number=9&cuisine=Spanish`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -28,7 +26,7 @@ const Asian_recipes = () => {
   }, []);
 
   return ( <>
-    <h3 className='heading_recipe'>KUCHNIA AZJATYCKA</h3>
+    <h3 className='heading_recipe'>KUCHNIA HISZPAŃSKA</h3>
     <div>
       <CardGroup className='recipe_group'>
         {recipes &&
@@ -50,5 +48,4 @@ const Asian_recipes = () => {
   )
 }
 
-
-export default Asian_recipes;
+export default Spanish_recipes
