@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import {CardGroup, Card, CardImg, CardBody, CardTitle, Button} from 'reactstrap'
 import './italian_recipes.css'
+import { Link } from 'react-router-dom';
+
 
 
 const Italian_recipes = () => {  
@@ -36,7 +38,7 @@ const Italian_recipes = () => {
               <CardImg alt="Card image cap" src={recipe.image} top width="100%" />
               <CardBody>
                 <CardTitle className='card_title' tag="h5">{recipe.title}</CardTitle>
-                <a href="#" class="button button_recipes">Szczegóły</a>
+                <Link to={`/details/${recipe.id}`} className="button button_recipes">Szczegóły</Link>
               </CardBody>
             </Card>
           ))}
