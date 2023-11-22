@@ -72,9 +72,9 @@ const Header = () => {
             </UncontrolledDropdown>
           </li>
 
-            <li><a href="#">LOSOWY PRZEPIS</a></li>
+            <li><Link to='/random'>LOSOWY PRZEPIS</Link></li>
             <li><a href="#">ULUBIONE</a></li>{/*dla zalogowanych*/}
-            <li><a href="#">DODAJ</a></li>{/*dla zalogowanych*/}
+            <li><a href="#">PLANOWANIE POSIŁKÓW</a></li>{/*dla zalogowanych*/}
           </ul>
         </nav>
         <div className="user-section">
