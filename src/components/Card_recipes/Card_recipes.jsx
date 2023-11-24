@@ -8,6 +8,7 @@ import european from '../../assets/images/cuisine/european.jpg'
 import italian from '../../assets/images/cuisine/italian.jpg'
 import japanese from '../../assets/images/cuisine/japanese.jpg'
 import korean from '../../assets/images/cuisine/korean.jpg'
+import { Link } from 'react-router-dom';
 
 const Card_recipes = () => {
   return (
@@ -26,9 +27,9 @@ const Card_recipes = () => {
       </CardTitle>
       
       <CardText className='card_text'>
-      This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+      Kuchnia azjatycka jest niezwykle zróżnicowana, łącząc smaki i techniki kulinarne z różnych regionów Azji. Jest znana z bogatego użycia ryżu, świeżych warzyw, ryb i przypraw, z dużym naciskiem na równowagę smaków i tekstur.
       </CardText>
-      <a href="#" class="button card_button">Zobacz</a>
+      <Link to='/asian'><a href="#" class="button card_button">Zobacz</a></Link>
     </CardBody>
   </Card>
   <Card className='recipe_card'>
@@ -44,9 +45,9 @@ const Card_recipes = () => {
       </CardTitle>
       
       <CardText className='card_text'>
-      This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+      Kuchnia włoska jest znana z bogatego wykorzystania świeżych składników, takich jak pomidory, oliwa z oliwek, czosnek i zioła. Jest to kuchnia, która celebruje prostotę i smak, ze szczególnym naciskiem na pasty, pizze, risotto i sycące sosy.
       </CardText>
-      <a href="#" class="button card_button">Zobacz</a>
+      <Link to='/italian'><a href="#" class="button card_button">Zobacz</a></Link>
     </CardBody>
   </Card>
   <Card className='recipe_card'>
@@ -62,9 +63,9 @@ const Card_recipes = () => {
       </CardTitle>
      
       <CardText className='card_text'>
-        This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+      Charakterystyczna dla kuchni japońskiej jest subtelność i harmonia smaków oraz estetyczne podanie potraw. Sushi, sashimi, ramen i tempura to tylko niektóre z popularnych dań. Kładzie się duży nacisk na świeżość i jakość składników, zwłaszcza ryb i owoców morza.
       </CardText>
-      <a href="#" class="button card_button">Zobacz</a>
+      <Link to='/japanese'><a href="#" class="button card_button">Zobacz</a></Link>
     </CardBody>
   </Card>
   </CardGroup>
@@ -82,9 +83,9 @@ const Card_recipes = () => {
       </CardTitle>
       
       <CardText className='card_text'>
-        This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+      Kuchnia koreańska słynie z intensywności smaków i różnorodności potraw. Kimchi, pikantne zupy, bulgogi i bibimbap to jej znaki rozpoznawcze. Charakteryzuje ją użycie fermentowanych składników i bogactwo przypraw, w tym gochujang (pikantna pasta chili).
       </CardText>
-      <a href="#" class="button card_button">Zobacz</a>
+      <Link to='/korean'><a href="#" class="button card_button">Zobacz</a></Link>
     </CardBody>
   </Card>
   <Card className='recipe_card'>
@@ -100,9 +101,9 @@ const Card_recipes = () => {
       </CardTitle>
       
       <CardText className='card_text'>
-        This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+      Kuchnia hiszpańska jest znana z bogatych i różnorodnych smaków, wykorzystując składniki takie jak oliwki, czosnek, i pomidory. Tapas, paella i gazpacho to klasyczne hiszpańskie potrawy, które podkreślają społeczny aspekt jedzenia i wspólne celebrowanie posiłków.
       </CardText>
-      <a href="#" class="button card_button">Zobacz</a>
+      <Link to='/spanish'><a href="#" class="button card_button">Zobacz</a></Link>
     </CardBody>
   </Card>
   <Card className='recipe_card'>
@@ -118,9 +119,9 @@ const Card_recipes = () => {
       </CardTitle>
       
       <CardText className='card_text'>
-        This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+      Kuchnia europejska jest różnorodna i obejmuje szeroką gamę stylów kulinarnych, od delikatnych francuskich sosów po serowe dania szwajcarskie. Charakteryzuje się użyciem lokalnych, sezonowych składników i tradycyjnych technik gotowania.
       </CardText>
-      <a href="#" class="button card_button">Zobacz</a>
+      <Link to='/european'><a href="#" class="button card_button">Zobacz</a></Link>
     </CardBody>
   </Card>
 </CardGroup>

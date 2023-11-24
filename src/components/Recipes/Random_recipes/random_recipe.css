@@ -1,5 +1,5 @@
 .random-recipe {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     background-color: #f8f8f8;
@@ -9,16 +9,19 @@
   }
   
   .random-recipe h1 {
-    color: #333;
+    display: flex;
+    justify-content: center;
+    color: #40ba37;
     font-size: 2em;
     margin-bottom: 10px;
   }
   
   .random-recipe img {
+    display: flex;
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin: 20px auto;
   }
   
   .random-recipe p {

@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import "./header.css"
 import logo from '../../assets/images/logo-black.png'
 import user from '../../assets/images/icons/user-line.png'
-import search from '../../assets/images/icons/search-line.png'
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import Routes from '../../router/Routers';
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown, Button } from 'reactstrap';
+import { DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown, Button } from 'reactstrap';
 
 
 const Header = () => {
@@ -73,19 +71,20 @@ const Header = () => {
           </li>
 
             <li><Link to='/random'>LOSOWY PRZEPIS</Link></li>
+            <li><Link to='/#'>VEGE</Link></li>
             <li><a href="#">ULUBIONE</a></li>{/*dla zalogowanych*/}
-            <li><a href="#">PLANOWANIE POSIŁKÓW</a></li>{/*dla zalogowanych*/}
+            <li><a href="#">PLANOWANIE POSIŁKÓW</a></li>
           </ul>
         </nav>
         <div className="user-section">
-          {isSearchActive ? (
+          {/* {isSearchActive ? (
             <input className='search_bar' type="text" placeholder="Wyszukaj" onBlur={handleBlur} />
           ) : (
           <span></span>
           )}
             <div className="search-icon" onClick={toggleSearch}>
               <img src={search} alt="search" />
-            </div>
+            </div> */}
           <div className="user-profile">
             <img src={user} alt="Profil użytkownika" />
           </div>

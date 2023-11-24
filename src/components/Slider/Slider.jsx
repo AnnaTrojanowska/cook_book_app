@@ -1,30 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import './slider.css'; // Zaimportuj plik ze stylami dla komponentu
-import image1 from '../../assets/images/bg6.jpg';
-import image2 from '../../assets/images/bg6.jpg';
-import image3 from '../../assets/images/bg6.jpg';
+import italian from '../../assets/images/slider_italian.jpg';
+import korean from '../../assets/images/slider_korean.jpg';
+import japanese from '../../assets/images/slider_japanese.jpg';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import '../../index.css'
+import { Link } from 'react-router-dom';
 
 
 const Slider = () => {
   const sliderImages = [    
     {
-      image: image1,
-      text: 'Lorem ipsum',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officiis, ullam, ducimus nobis explicabo iusto recusandae iure pariatur error vitae atque corporis eos aperiam harum earum dolorem voluptatem, nihil veniam.'
+      image: italian,
+      text: 'Kuchnia włoska',
+      description: 'Kuchnia włoska jest znana z bogatego wykorzystania świeżych składników, takich jak pomidory, oliwa z oliwek, czosnek i zioła. Jest to kuchnia, która celebruje prostotę i smak, ze szczególnym naciskiem na pasty, pizze, risotto i sycące sosy.'
       
     },
     {
-      image: image2,
-      text: 'Lorem ipsum2',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officiis, ullam, ducimus nobis explicabo iusto recusandae iure pariatur error vitae atque corporis eos aperiam harum earum dolorem voluptatem, nihil veniam.'
+      image: korean,
+      text: 'Kuchnia koreańska',
+      description: 'Kuchnia koreańska słynie z intensywności smaków i różnorodności potraw. Kimchi, pikantne zupy, bulgogi i bibimbap to jej znaki rozpoznawcze. Charakteryzuje ją użycie fermentowanych składników i bogactwo przypraw, w tym gochujang (pikantna pasta chili).'
 
     },
     {
-      image: image3,
-      text: 'Lorem ipsum3',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officiis, ullam, ducimus nobis explicabo iusto recusandae iure pariatur error vitae atque corporis eos aperiam harum earum dolorem voluptatem, nihil veniam.'
+      image: japanese,
+      text: 'Kuchnia japońska',
+      description: 'Charakterystyczna dla kuchni japońskiej jest subtelność i harmonia smaków oraz estetyczne podanie potraw. Sushi, sashimi, ramen i tempura to tylko niektóre z popularnych dań. Kładzie się duży nacisk na świeżość i jakość składników, zwłaszcza ryb i owoców morza.'
 
     },
   ];
@@ -57,7 +58,7 @@ const Slider = () => {
             <div className="slide-content">
               <h2>{imageObj.text}</h2>
               <p>{imageObj.description}</p>
-              <a href="#" class="button">Zobacz</a>
+              <Link to='/recipes'><a href="#" class="button">Zobacz</a></Link>
             </div>
             <FaArrowAltCircleLeft className="arrow-icon left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="arrow-icon right-arrow" onClick={nextSlide} />

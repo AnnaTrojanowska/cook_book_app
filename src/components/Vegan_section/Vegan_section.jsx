@@ -10,7 +10,7 @@ const Vegan_section = () => {
                 <div className='column_vegan'>
                     <div className='content_vegan'>
                         <h2>Przepisy Vege</h2>
-                        <p>Fusce nec ante vitae lacus aliquet vulputate. Donec scelerisque accumsan molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sed accumsan neque. Ut vulputate, lectus vel aliquam congue, risus leo elementum nibh</p>
+                        <p>Kuchnia wegetariańska charakteryzuje się różnorodnością i kreatywnością w wykorzystaniu warzyw, zbóż, strączków i owoców. Dania wegetariańskie często są bogate w składniki odżywcze, oferując pełnowartościowe białko, witaminy i minerały. Wegetariańskie przepisy eksplorują szeroką paletę smaków i tekstur, wykorzystując techniki kulinarne z różnych kultur, aby stworzyć satysfakcjonujące i smakowite posiłki, od bogatych curry po lekkie sałatki i kreatywne dania z pieca.</p>
                         <a href='#' className='button'>Zobacz więcej przepisów</a>
                     </div>
                 </div>
