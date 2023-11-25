@@ -71,7 +71,7 @@ const Header = () => {
           </li>
 
             <li><Link to='/random'>LOSOWY PRZEPIS</Link></li>
-            <li><Link to='/#'>VEGE</Link></li>
+            <li><Link to='/vegan'>VEGE</Link></li>
             <li><a href="#">ULUBIONE</a></li>{/*dla zalogowanych*/}
             <li><a href="#">PLANOWANIE POSIŁKÓW</a></li>
           </ul>

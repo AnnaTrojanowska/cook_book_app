@@ -10,6 +10,7 @@ import Japanese_Recipes from './../pages/Japanese_Recipes'
 import Korean_Recipes from './../pages/Korean_Recipes'
 import Recipe_details from '../components/Recipes/Recipes_details/Recipe_details'
 import { Random_recipe } from '../components/Recipes/Random_recipes/Random_recipe'
+import Vegan_recipes from '../components/Recipes/Vegan_recipes/Vegan_recipes'
 
 const Routers = () => {
   return (
@@ -25,6 +26,7 @@ const Routers = () => {
         <Route  path='/korean' element={<Korean_Recipes/>}/>
         <Route path="/details/:id" element={<Recipe_details/>} />
         <Route path='/random' element={<Random_recipe/>}/>
+        <Route path='/vegan' element={<Vegan_recipes/>}/>
       </Routes>
     </BrowserRouter>
     

@@ -65,9 +65,9 @@
 }
 
 .recipe_content h5{
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 600;
     transition-duration: 500ms;
     margin-top: 20px;
 }
