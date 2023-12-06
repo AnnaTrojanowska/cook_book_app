@@ -1,0 +1,45 @@
+.contact-form-container {
+    max-width:1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 30px;
+    border: none;
+    background-color: #f3f5f8;
+    box-sizing: border-box;
+    margin-top: 6px;
+}
+
+
+.form-group textarea {
+    height: 150px;
+}
+
+.button {
+   
+    margin: 0 auto;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
