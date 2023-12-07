@@ -1,0 +1,37 @@
+.help-component {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.text-image-section,
+.image-text-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.text-image-section .text,
+.image-text-section .text {
+    flex: 1;
+    padding: 15px;
+}
+
+.text-image-section .image {
+    flex: 1;
+    padding: 15px;
+    order: 2; /* W tej sekcji obraz będzie po prawej */
+}
+
+.image-text-section .image {
+    flex: 1;
+    padding: 15px;
+ 
+}
+
+.text-image-section img,
+.image-text-section img {
+    width: 100%;
+    max-width: 400px; /* lub inny preferowany maksymalny rozmiar */
+    height: auto;
+}
