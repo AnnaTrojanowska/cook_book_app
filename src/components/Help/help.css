@@ -1,20 +1,31 @@
 .help-component {
     text-align: center;
     margin: 30px 0;
+    padding: 20px 100px;
 }
 
+.help-component h1{
+    margin-bottom: 4rem;
+}
+
+.text h2{
+    margin-bottom: 1.5rem;
+}
 .text-image-section,
 .image-text-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    
 }
 
 .text-image-section .text,
 .image-text-section .text {
     flex: 1;
     padding: 15px;
+    background-color: #f3f5f8;
+    border-left: 5px solid #40ba37;
 }
 
 .text-image-section .image {

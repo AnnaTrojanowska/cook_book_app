@@ -1,12 +1,22 @@
 .meal-plan-container {
     font-family: Arial, sans-serif;
     margin: 20px;
+    padding: 30px;
+}
+
+.meal-plan-box{
+    margin-top: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .title {
     color: #333;
     text-align: center;
     margin: 20px 0;
+    
 }
 
 .day-container {
@@ -14,16 +24,26 @@
 }
 
 .day-title {
-    background-color: #4CAF50;
+    width: 100%;
     color: white;
     padding: 10px;
     border-radius: 5px;
+    border-left: 3px solid #1c8314;
+    border-radius: 0;
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 58px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 500ms;
+    text-transform: capitalize;
+    background-color: #40ba37;
 }
 
 .meal-container {
-    border: 1px solid #ddd;
+    height: 250px;
     padding: 10px;
-    border-radius: 5px;
+    background-color: #f3f5f8;
     margin-top: 10px;
 }
 

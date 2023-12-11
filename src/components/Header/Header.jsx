@@ -73,7 +73,7 @@ const Header = () => {
             <li><Link to='/random'>LOSOWY PRZEPIS</Link></li>
             <li><Link to='/vegan'>VEGE</Link></li>
             <li><a href="#">ULUBIONE</a></li>{/*dla zalogowanych*/}
-            <li><a href="#">PLANOWANIE POSIŁKÓW</a></li>
+            <li><Link to='/mealplan'>PLANOWANIE POSIŁKÓW</Link></li>
           </ul>
         </nav>
         <div className="user-section">

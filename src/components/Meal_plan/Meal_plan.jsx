@@ -28,7 +28,8 @@ const Meal_plan = () => {
 
     return (
         <div className="meal-plan-container">
-        <h1 className="title">Twój Plan Posiłków na Tydzień</h1>
+            <h1 className="title">Twój Plan Posiłków na Tydzień</h1>
+            <div className='meal-plan-box'>
         {mealPlan.week && Object.keys(mealPlan.week).map(day => (
             <div key={day} className="day-container">
                 <h2 className="day-title">{day.charAt(0).toUpperCase() + day.slice(1)}</h2>
@@ -48,7 +49,9 @@ const Meal_plan = () => {
                         <p>Węglowodany: {mealPlan.week[day].nutrients.carbohydrates.toFixed(2)} g</p>
                     </div>
             </div>
+            
         ))}
+        </div>
     </div>
     );
 };

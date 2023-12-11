@@ -21,32 +21,45 @@ const Recipe_details = () => {
     <>
     
     <div className="recipe-details">
-      <h1>{recipe.title}</h1>
+      
       <img src={recipe.image} alt={recipe.title} />
-      <p dangerouslySetInnerHTML={{ __html: recipe.summary }}></p>
-      <p>Czas przygotowania: {recipe.readyInMinutes} minut</p>
-      <p>Porcje: {recipe.servings}</p>
+      <h1>{recipe.title}</h1>
+      <div className='div_parent'>
+        <div className='div_grid_1'>
+          <p dangerouslySetInnerHTML={{ __html: recipe.summary }}></p>
+          <p>Czas przygotowania: {recipe.readyInMinutes} minut</p>
+          <p>Porcje: {recipe.servings}</p>
+        </div>
 
-      <h3>Składniki:</h3>
-      <ul>
-        {recipe.extendedIngredients.map((ingredient, index) => (
-          <li key={index}>{ingredient.original}</li>
-        ))}
-      </ul>
+        <div className='div_grid_2'>
+          <h3>Instrukcje:</h3>
+          <div dangerouslySetInnerHTML={{ __html: recipe.instructions }}></div>
+        </div>  
 
-      <h3>Instrukcje:</h3>
-      <div dangerouslySetInnerHTML={{ __html: recipe.instructions }}></div>
+        <div className='div_grid_3'>
+          <h3>Składniki:</h3>
+          <ul>
+            {recipe.extendedIngredients.map((ingredient, index) => (
+              <li key={index}>{ingredient.original}</li>
+            ))}
+          </ul>  
+        </div> 
 
-      <h3>Informacje dietetyczne:</h3>
-      <p>Wegańskie: {recipe.vegan ? 'Tak' : 'Nie'}</p>
-      <p>Wegetariańskie: {recipe.vegetarian ? 'Tak' : 'Nie'}</p>
-      <p>Bezglutenowe: {recipe.glutenFree ? 'Tak' : 'Nie'}</p>
-      <p>Bez nabiału: {recipe.dairyFree ? 'Tak' : 'Nie'}</p>
+        <div className='div_grid_4'> 
+          <h3>Informacje dietetyczne:</h3>
+          <p>Wegańskie: {recipe.vegan ? 'Tak' : 'Nie'}</p>
+          <p>Wegetariańskie: {recipe.vegetarian ? 'Tak' : 'Nie'}</p>
+          <p>Bezglutenowe: {recipe.glutenFree ? 'Tak' : 'Nie'}</p>
+          <p>Bez nabiału: {recipe.dairyFree ? 'Tak' : 'Nie'}</p>
+        </div>  
 
-      <h3>Wine Pairing:</h3>
-      {recipe.winePairing && (
-        <p>{recipe.winePairing.pairingText}</p>
-      )}
+        <div className='div_grid_5'>
+        <h3>Wine Pairing:</h3>
+        {recipe.winePairing && (
+          <p>{recipe.winePairing.pairingText}</p>
+        )}
+        </div>
+      </div>
     </div>
   </>
   )
