@@ -12,8 +12,10 @@ import Recipe_details from '../components/Recipes/Recipes_details/Recipe_details
 import { Random_recipe } from '../components/Recipes/Random_recipes/Random_recipe'
 import Vegan_recipes from '../components/Recipes/Vegan_recipes/Vegan_recipes'
 import Meal_plan from '../components/Meal_plan/Meal_plan'
-import Help from '../components/Help/Help'
-import Contact from '../components/Contact/Contact'
+import Help from './../pages/Help_page'
+import Contact from './../pages/Contact_page'
+import Login from './../pages/SignIn_page'
+import Register from './../pages/SignUp_page'
 
 const Routers = () => {
   return (
@@ -33,6 +35,8 @@ const Routers = () => {
         <Route path='/mealplan' element={<Meal_plan/>}/>
         <Route path='/help' element={<Help/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/signin' element={<Login/>}/>
+        <Route path='/signup' element={<Register/>}/>
       </Routes>
     </BrowserRouter>
     

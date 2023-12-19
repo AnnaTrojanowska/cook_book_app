@@ -86,7 +86,7 @@ const Header = () => {
               <img src={search} alt="search" />
             </div> */}
           <div className="user-profile">
-            <img src={user} alt="Profil użytkownika" />
+            <Link to='/signin'><img src={user} alt="Profil użytkownika" /></Link>
           </div>
         </div>
       </div>
