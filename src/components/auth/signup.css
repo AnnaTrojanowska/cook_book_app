@@ -1,12 +1,12 @@
 .sign-up-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
+    margin: 170px auto;
+    min-height: calc(63svh - 220px);
+
 }
 
 .sign-up-container h1{

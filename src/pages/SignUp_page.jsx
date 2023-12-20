@@ -5,7 +5,6 @@ import AuthDetails from '../components/AuthDetails.jsx'
 const SignIn_page = () => {
   return (<>
         <SignUp/>
-        <AuthDetails/>
         </>
     )
 }

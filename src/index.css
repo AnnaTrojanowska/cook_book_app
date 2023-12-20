@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
 }
 
 code {
@@ -33,4 +32,17 @@ code {
 
 .button:hover{
   background-color: #1c8314;
+}
+
+.signOutButton{
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+  border: none;
+  background-color: #Fff;
+  margin-left: 15px;
+}
+
+.signOutButton:hover{
+  color:#40ba37;
 }

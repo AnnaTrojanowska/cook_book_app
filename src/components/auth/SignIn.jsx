@@ -1,12 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../../firebase.js'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import "./signin.css"
+import { useAuth } from '../AuthContext.jsx';
 
 const SignIn = () => {
+    const { authUser } = useAuth();
+    const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+
+    useEffect(() => {
+        if (authUser) {
+            navigate('/'); 
+        }
+    }, [authUser, navigate]);
 
     const signIn = (e) => {
         e.preventDefault();

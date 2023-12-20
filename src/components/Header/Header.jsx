@@ -4,9 +4,12 @@ import logo from '../../assets/images/logo-black.png'
 import user from '../../assets/images/icons/user-line.png'
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown, Button } from 'reactstrap';
+import { useAuth } from '../AuthContext';
+import AuthDetails from '../AuthDetails';
 
 
 const Header = () => {
+  
     const [isSearchActive, setSearchActive] = useState(false);
   
     const toggleSearch = () => {
@@ -24,6 +27,8 @@ const Header = () => {
     const toggleDropdown = () => {
       setDropdownOpen(prevState => !prevState);
     };
+
+    const { authUser } = useAuth();
 
   return (
     <Router>
@@ -72,8 +77,9 @@ const Header = () => {
 
             <li><Link to='/random'>LOSOWY PRZEPIS</Link></li>
             <li><Link to='/vegan'>VEGE</Link></li>
-            <li><a href="#">ULUBIONE</a></li>{/*dla zalogowanych*/}
+            {authUser && (
             <li><Link to='/mealplan'>PLANOWANIE POSIŁKÓW</Link></li>
+            )}
           </ul>
         </nav>
         <div className="user-section">
@@ -86,7 +92,15 @@ const Header = () => {
               <img src={search} alt="search" />
             </div> */}
           <div className="user-profile">
-            <Link to='/signin'><img src={user} alt="Profil użytkownika" /></Link>
+            {!authUser && (
+            <Link to='/signin'><img src={user} alt="Logowanie" /></Link>
+            )}
+            {authUser && (
+            <div>
+            <Link to='/user_profil'><img src={user} alt="Profil użytkownika" /></Link>
+            <AuthDetails/>
+            </div>
+            )}  
           </div>
         </div>
       </div>

@@ -1,11 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../../firebase.js'
 import "./signup.css"
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../AuthContext.jsx';
+
+
 
 const SignUp = () => {
+    const { authUser } = useAuth();
+    const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+
+    useEffect(() => {
+        if (authUser) {
+            navigate('/'); 
+        }
+    }, [authUser, navigate]);
 
     const signUp = (e) => {
         e.preventDefault();
