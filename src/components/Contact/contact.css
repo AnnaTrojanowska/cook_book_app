@@ -43,3 +43,8 @@ form{
     margin-bottom: 40px;
 }
 
+.success-message{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}

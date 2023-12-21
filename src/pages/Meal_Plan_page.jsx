@@ -12,8 +12,7 @@ const Meal_Plan_page = () => {
     }
   return (
     <AuthProvider>
-        <AuthDetails/>
-        <Meal_plan/>
+\        <Meal_plan/>
     </AuthProvider>
   )
 }

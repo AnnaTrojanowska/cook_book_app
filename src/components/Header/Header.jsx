@@ -97,7 +97,7 @@ const Header = () => {
             )}
             {authUser && (
             <div>
-            <Link to='/user_profil'><img src={user} alt="Profil użytkownika" /></Link>
+            <Link to='/user_profile'><img src={user} alt="Profil użytkownika" /></Link>
             <AuthDetails/>
             </div>
             )}  

@@ -16,6 +16,7 @@ import Help from './../pages/Help_page'
 import Contact from './../pages/Contact_page'
 import Login from './../pages/SignIn_page'
 import Register from './../pages/SignUp_page'
+import User_Profil_page from '../pages/User_Profil_page'
 
 const Routers = () => {
   return (
@@ -37,6 +38,7 @@ const Routers = () => {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/signin' element={<Login/>}/>
         <Route path='/signup' element={<Register/>}/>
+        <Route path='/user_profile' element={<User_Profil_page/>}/>
       </Routes>
     </BrowserRouter>
     

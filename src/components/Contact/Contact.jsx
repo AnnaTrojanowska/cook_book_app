@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './contact.css'
+import { db } from '../../firebase';
+import { collection, addDoc} from 'firebase/firestore'
 
 const Contact = () => {
      const [formData, setFormData] = useState({
@@ -9,19 +11,38 @@ const Contact = () => {
         message: ''
     });
 
+    const [messageSent, setMessageSent] = useState(false);
+
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Tutaj logika przetwarzania danych formularza
-        console.log(formData);
+        try {
+            await addDoc(collection(db, "contactMessages"), {
+                name: formData.name,
+                email: formData.email,
+                subject: formData.subject,
+                message: formData.message,
+                timestamp: new Date(),
+            });
+            console.log("Wiadomość zapisana w Firestore");
+            setFormData({ name: '', email: '', subject: '', message: '' }); // Wyczyszczenie formularza
+            setMessageSent(true);
+            // Opcjonalnie, możesz ustawić timeout, aby komunikat zniknął po pewnym czasie
+            setTimeout(() => setMessageSent(false), 5000);
+        } catch (error) {
+            console.error("Błąd podczas zapisywania dokumentu: ", error);
+            // Opcjonalnie, obsłuż błąd
+        }
     };
+    
 
   return (
     <div className="contact-form-container">
         <h2>Masz pytania? Daj znać!</h2>
+        {messageSent && <div className="success-message">Dziękujemy za kontakt!</div>}
     <form onSubmit={handleSubmit}>
         <div className="form-group">
             <input 

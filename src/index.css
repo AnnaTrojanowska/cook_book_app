@@ -46,3 +46,41 @@ code {
 .signOutButton:hover{
   color:#40ba37;
 }
+
+.user-page-container{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.user-page-container h1{
+  margin-bottom: 2rem;
+}
+
+.user-page-container h3{
+  margin: 2rem 0;
+
+}
+
+.user-page-container .text{
+  width: 1000px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f3f5f8;
+  border-left: 5px solid #40ba37;
+}
+
+.user-page-container a{
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+  border: none;
+  background-color: #Fff;
+}
+
+.user-page-container a:hover{
+  color:#40ba37;
+}

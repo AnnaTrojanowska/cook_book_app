@@ -51,21 +51,13 @@ const Help = () => {
             <section className="text-image-section">
                 <div className="text">
                     <h2>Planer posiłków</h2>
-                    <p>Aby przejść do sekcji planowania posiłków należy kliknąć przycisk "PLANOWANIE POSIŁKÓW" znajdujący się w menu na górze strony. Po kliknięciu następuje przekierowanie na stronę, na której zostają wyświetlone 3 główne posiłki na kazdy dzień tygodnia. Pod nazwami przepisów znajdują się informacje o ilości kalorii, białka, tłuszczu i węglowodanów na każdy z dni. Aby przejść w szczegóły przepisu należy kliknąć w jego nazwę.</p>
+                    <p>Aby przejść do sekcji planowania posiłków należy być zalogowanym użytkownikiem oraz kliknąć przycisk "PLANOWANIE POSIŁKÓW" znajdujący się w menu na górze strony. Po kliknięciu następuje przekierowanie na stronę, na której zostają wyświetlone 3 główne posiłki na kazdy dzień tygodnia. Pod nazwami przepisów znajdują się informacje o ilości kalorii, białka, tłuszczu i węglowodanów na każdy z dni. Aby przejść w szczegóły przepisu należy kliknąć w jego nazwę.</p>
                 </div>
                 <div className="image">
                     <img src={meal_planner} alt="GIF strony głównej" />
                 </div>
             </section>
-            <section className="image-text-section">
-                <div className="image">
-                    <img src="path_to_your_second_image.jpg" alt="GIF przepisów" />
-                </div>
-                <div className="text">
-                    <h2>Zapisywanie ulubionych przepisów</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sed non veritatis vitae tempore numquam rerum ratione itaque ipsum quidem, explicabo esse amet sit at fuga, accusamus cumque in atque.</p>                
-                </div>
-            </section>
+            
         </div>
         </>
   )
