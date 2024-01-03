@@ -10,6 +10,7 @@ const SignIn = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
 
     useEffect(() => {
         if (authUser) {
@@ -25,13 +26,17 @@ const SignIn = () => {
             })
             .catch((error) => {
                 console.log(error);
+                setError("Niepoprawne dane logowania."); 
             })
     }
+
+    
 
   return (
     <div className='sign-in-container'>
         <form onSubmit={signIn}>
             <h1>Zaloguj się</h1>
+            {error && <p className="error">{error}</p>}
             <input
                 type='email'
                 placeholder='E-mail'
@@ -46,6 +51,7 @@ const SignIn = () => {
             ></input>
             <button type='submit' className='button'>Zaloguj się</button>
             <p>Nie masz konta? <Link to={'/signup'}>Zarejestruj się!</Link></p>
+            
         </form>
 
     </div>
