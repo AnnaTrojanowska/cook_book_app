@@ -10,7 +10,6 @@ const Spanish_recipes = () => {
   const apiKey = '8d02f508a08743e5a1daa7e0c08d51b9';
 
   useEffect(() => {
-    // Wykonaj zapytanie do API Spoonacular po załadowaniu komponentu
     fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&number=9&cuisine=Spanish`)
       .then(response => {
         if (!response.ok) {
@@ -19,7 +18,6 @@ const Spanish_recipes = () => {
         return response.json();
       })
       .then(data => {
-        // Zapisz wyniki zapytania do stanu komponentu
         setRecipes(data.results);
       })
       .catch(error => {

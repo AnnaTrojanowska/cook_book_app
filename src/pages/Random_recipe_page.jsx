@@ -2,11 +2,11 @@ import React from 'react'
 import Random_recipe from '../components/Recipes/Random_recipes/Random_recipe'
 
 
-const Recipe_details_page = () => {
+const Random_recipe_page = () => {
     return (<>
         <Random_recipe/>
         </>
       )
 }
 
-export default Recipe_details_page
+export default Random_recipe_page

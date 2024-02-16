@@ -93,3 +93,5 @@ export const Random_recipe = () => {
     </>
     )
 }
+
+export default Random_recipe
